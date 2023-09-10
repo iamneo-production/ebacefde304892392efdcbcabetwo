@@ -1,12 +1,100 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap");
 
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-family: "Radio Canada", sans-serif;
-  }
-  
-/* Enter your styling here */
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Radio Canada", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.btn[readonly] {
+  cursor: not-allowed;
+  color: #000;
+}
+
+.result-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #fff;
+  text-align: center;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+.result {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+}
+
+.reset-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  border: 2px solid #000;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.reset-btn[disabled] {
+  cursor: not-allowed;
+}
+

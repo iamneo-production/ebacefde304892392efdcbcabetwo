@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tic_tac_toe</title>
-
-  <link rel="stylesheet" src="style.css">
-
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
-  <!-- Enter your code here -->
-  <script src="app.js"></script>
+  <header>
+    <h1>Tic Tac Toe</h1>
+  </header>
+  <div class="box">
+    <!-- 3x3 grid -->
+    <div class="row">
+      <input type="text" class="btn" readonly>
+      <input type="text" class="btn" readonly>
+      <input type="text" class="btn" readonly>
+    </div>
+    <div class="row">
+      <input type="text" class="btn" readonly>
+      <input type="text" class="btn" readonly>
+      <input type="text" class="btn" readonly>
+    </div>
+    <div class="row">
+      <input type="text" class="btn" readonly>
+      <input type="text" class="btn" readonly>
+      <input type="text" class="btn" readonly>
+    </div>
+    
+    <div class="result-container">
+      <p class="result">Player X's turn</p>
+    </div>
+    
+    <div class="reset-section">
+      <button id="reset-button" class="reset-btn" disabled>Reset</button>
+    </div>
+  </div>
+  <script src="app.js"></script> 
 </body>
-</html>
+
+</html>>
